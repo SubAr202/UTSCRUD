@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var fabAddFilm: FloatingActionButton
     // Adapter Kustom
     private lateinit var filmAdapter: FilmAdapter
-    // Variabel untuk ID Film terakhir yang digunakan
-    private var lastId = 2 // Dimulai dari 2 karena data dummy memiliki ID 1 dan 
+    // Variabel untuk ID Film terakhir yang digunakan. sesuaikan setelah data dummy
+    private var lastId = 2
     // 2. Launcher untuk Menambah Film (CREATE)
     private val addFilmLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == Activity.RESULT_OK) {

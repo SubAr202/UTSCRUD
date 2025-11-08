@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateMovieActivity">
+
+    <!-- Judul Halaman -->
+    <TextView
+        android:id="@+id/editMovieHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Edit Data Movie"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="24sp" />
+
+    <!-- Tombol Simpan -->
+    <ImageView
+        android:id="@+id/editSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_save_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/editMovieHeading"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="Simpan" />
+
+    <!-- ID -->
+    <EditText
+        android:id="@+id/editIdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="ID Film"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:background="@drawable/border"
+        android:layout_below="@id/editMovieHeading"
+        android:layout_marginTop="12dp" />
+
+    <!-- Judul -->
+    <EditText
+        android:id="@+id/editJudulEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Judul Film"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:background="@drawable/border"
+        android:layout_below="@id/editIdEditText"
+        android:layout_marginTop="12dp" />
+
+    <!-- Genre -->
+    <EditText
+        android:id="@+id/editGenreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Genre"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:background="@drawable/border"
+        android:layout_below="@id/editJudulEditText"
+        android:layout_marginTop="12dp" />
+
+    <!-- Tahun Rilis -->
+    <EditText
+        android:id="@+id/editTahunRilisText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Tahun Rilis"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:background="@drawable/border"
+        android:layout_below="@id/editGenreEditText"
+        android:layout_marginTop="12dp" />
+
+    <!-- Rumah Produksi -->
+    <EditText
+        android:id="@+id/editRumahProduksi"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Rumah Produksi"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:background="@drawable/border"
+        android:layout_below="@id/editTahunRilisText"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>
